@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BOOTSTRAP - Landing Page</title>
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <!-- Mi CSS -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body><!-- Utilizando la documentación de BOOTSRTAP, buena fuente de información -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"><!-- Creando un etiqueta HTML que hace referencia a la navegación y usando las clases de bootstrap nos va a estilizar nuestro componente -->
+        <div class="container"><!-- container = elementos centrados -->
+            <a class="navbar-brand" href="/"><!-- Me envia al inicio de la app -->
+                <img src="img/logo.png" alt="Unitalk logo" style="width: 10%">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto"><!-- ml-auto = margin-left: auto; para que cuando sea un tamaño de pantalla los elementos de la navegación estén hacia la derecha-->
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Team</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="background-overlay text-white py-5"><!-- Fondo encima de una imagen, más texto blanco y un padding arriba de 5 -->
+            <div class="container"><!-- Para que centre el contenido como hizo con los elementos de la navegación -->
+                <div class="row"><!-- row = fila // -->
+                    <div class="col-md-6 text-center justify-content-center align-self-center"><!-- columna de 6 y texto centrado vertical y horizontalmente -->
+                        <h1>This is title or an phrase related to the product</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, commodi.</p>
+                        <a href="#" class="btn btn-outline-secondary btn-lg text-white">Read More</a><!-- btn = se vea como un botón y outline = tenga un borde y que el color sea secondary, algo como blanco o plomo, btn-g para que se vea más grande y text-white para el color blanco del texto -->
+                    </div>
+                    <div class="col-md-6"><!-- Columna de 6 -->
+                        <img src="img/product.jpg" alt="Imagen del Producto" class="img-fluid d-none d-sm-block"><!-- img-fluid = imagen responsive y cuando la pantalla sea muy pequeña esta se ocultara -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- NEWSLETTER - Suscripción -->
+    <section class="bg-dark text-white py-5"><!-- Explicación de clases más arriba -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <input type="text" class="form-control form-control-lg" placeholder="Enter your Name"><!-- form-control = para estilizar los input y lg, para que sea grande-->
+                </div>
+                <div class="col-md-4">
+                    <input type="email" class="form-control form-control-lg" placeholder="Enter your Email"><!-- tipo email ya que guardara un email -->
+                </div>
+                <div class="col-md-4">
+                    <button class="btn btn-primary btn-lg btn-block">Suscribe</button><!-- btn-primary = color azul típico de bootstrap y btn-block para que ocupe todo el espacio del ancho -->
+                </div>
+            </div><!-- como boostrap esta conformado por 12 columnas -->
+        </div>
+    </section>
+
+    <!-- FEATURES - Caracteristicas -->
+    <section class="py-5"><!-- Espaciado de arriba y abajo padding de 5px -->
+        <div class="container">
+            <div class="row"><!-- Fila que tendra 12 columnas divididas en 4 -->
+                <div class="col-md-3">
+                    <div class="card text-center border-primary"><!-- Tarjeta con el texto centrado y con el color de borde primario de bootstrap que es un azul -->
+                        <div class="card-body"><!-- Cuerpo de la tarjeta -->
+                            <h3>Feature One</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center bg-primary text-white"><!-- Tarjeta con el texto centrado y con el color de fondo primario de bootstrap que es un azul y el texto blanco -->
+                        <div class="card-body"><!-- Cuerpo de la tarjeta -->
+                            <h3>Feature Two</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center border-primary"><!-- Tarjeta con el texto centrado y con el color de borde primario de bootstrap que es un azul -->
+                        <div class="card-body"><!-- Cuerpo de la tarjeta -->
+                            <h3>Feature Three</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center bg-primary text-white"><!-- Tarjeta con el texto centrado y con el color de fondo primario de bootstrap que es un azul y el texto blanco -->
+                        <div class="card-body"><!-- Cuerpo de la tarjeta -->
+                            <h3>Feature Four</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <!-- ABOUT -->
+    <section class="bg-light text-center"><!-- fondo claro y contenido centrado -->
+        <div class="container">
+            <div class="row">
+                <div class="m-5"><!-- m-5 = margen de 5 hacia todos los lados -->
+                    <h3>Why this Product?</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis maxime quibusdam, incidunt tenetur officiis laudantium recusandae tempora unde quia maiores! Debitis minus cum ipsam adipisci!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACCORDION -->
+    <div class="container text-center p-5"><!-- contenido centrado, padding de 5 hacia todos los lados -->
+        <div class="row"><!-- fila -->
+            <div class="accordion" id="accordionExample"><!-- Codigo del acordeon sacado de la documentación de bootstrap -->
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Question one?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus distinctio et, amet a neque ducimus veritatis illo cupiditate blanditiis rerum quasi sit molestiae quis ipsa odit alias soluta! Dicta ducimus autem sint animi voluptate exercitationem rem ea est aspernatur explicabo.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Collapsible Group Item #2
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Collapsible Group Item #3
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseOne"><!-- Cambiar data target -->
+                          Question 4?
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample"><!-- También el id -->
+                      <div class="card-body">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus distinctio et, amet a neque ducimus veritatis illo cupiditate blanditiis rerum quasi sit molestiae quis ipsa odit alias soluta! Dicta ducimus autem sint animi voluptate exercitationem rem ea est aspernatur explicabo.
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TEAM -->
+    <section class="team text-center"><!-- clase team para agregarle un color y texto centrado -->
+        <div class="container p-5"><!-- padding de 5 -->
+            <h1 class="text-white">Team</h1>
+            <p class="text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, earum.</p>
+            <div class="row">
+                <!-- MEMBER -->
+                <div class="col-lg-3"><!-- Siempre van a ocupar 3 columnas en un tamaño de pantalla grande y es responsive -->
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/person.png" class="img-fluid rounded-circle w-50" alt="Person One"><!-- img-fluid = imagen responsive, ovalada y con un ancho de 50 -->
+                            <h3>John Carter</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <div class="d-flex flex-row justify-content-center"><!-- Para que sus iconos de clase esten centrados -->
+                                <div class="p-4" ><!-- Para que haya un espaciado entre los iconos se dividiran con div y tendrán un padding de 4 -->
+                                    <a href="http://facebook.com" target="_blank"><!-- target="_blank" para que lo habra en un nueva pestaña -->
+                                        <i class="fab fa-facebook"></i>
+                                    </a>
+                                </div>
+                                <div class="p-4" ><!-- Para que haya un espaciado entre los iconos se dividiran con div y tendrán un padding de 4 -->
+                                    <a href="http://twitter.com" target="_blank"><!-- target="_blank" para que lo habra en un nueva pestaña -->
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </div>
+                                <div class="p-4" ><!-- Para que haya un espaciado entre los iconos se dividiran con div y tendrán un padding de 4 -->
+                                    <a href="http://instagram.com" target="_blank"><!-- target="_blank" para que lo habra en un nueva pestaña -->
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3"><!-- Siempre van a ocupar 3 columnas en un tamaño de pantalla grande y es responsive -->
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/person.png" class="img-fluid rounded-circle w-50" alt="Person One"><!-- img-fluid = imagen responsive, ovalada y con un ancho de 50 -->
+                            <h3>John Carter</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <div class="d-flex flex-row justify-content-center"><!-- Para que sus iconos de clase esten centrados -->
+                                <div class="p-4" ><!-- Para que haya un espaciado entre los iconos se dividiran con div y tendrán un padding de 4 -->
+                                    <a href="http://facebook.com" target="_blank"><!-- target="_blank" para que lo habra en un nueva pestaña -->
+                                        <i class="fab fa-facebook"></i>
+                                    </a>
+                                </div>
+                                <div class="p-4" ><!-- Para que haya un espaciado entre los iconos se dividiran con div y tendrán un padding de 4 -->
+                                    <a href="http://twitter.com" target="_blank"><!-- target="_blank" para que lo habra en un nueva pestaña -->
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </div>
+                                <div class="p-4" ><!-- Para que haya un espaciado entre los iconos se dividiran con div y tendrán un padding de 4 -->
+                                    <a href="http://instagram.com" target="_blank"><!-- target="_blank" para que lo habra en un nueva pestaña -->
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3"><!-- Siempre van a ocupar 3 columnas en un tamaño de pantalla grande y es responsive -->
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/person.png" class="img-fluid rounded-circle w-50" alt="Person One"><!-- img-fluid = imagen responsive, ovalada y con un ancho de 50 -->
+                            <h3>John Carter</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <div class="d-flex flex-row justify-content-center"><!-- Para que sus iconos de clase esten centrados -->
+                                <div class="p-4" ><!-- Para que haya un espaciado entre los iconos se dividiran con div y tendrán un padding de 4 -->
+                                    <a href="http://facebook.com" target="_blank"><!-- target="_blank" para que lo habra en un nueva pestaña -->
+                                        <i class="fab fa-facebook"></i>
+                                    </a>
+                                </div>
+                                <div class="p-4" ><!-- Para que haya un espaciado entre los iconos se dividiran con div y tendrán un padding de 4 -->
+                                    <a href="http://twitter.com" target="_blank"><!-- target="_blank" para que lo habra en un nueva pestaña -->
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </div>
+                                <div class="p-4" ><!-- Para que haya un espaciado entre los iconos se dividiran con div y tendrán un padding de 4 -->
+                                    <a href="http://instagram.com" target="_blank"><!-- target="_blank" para que lo habra en un nueva pestaña -->
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3"><!-- Siempre van a ocupar 3 columnas en un tamaño de pantalla grande y es responsive -->
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/person.png" class="img-fluid rounded-circle w-50" alt="Person One"><!-- img-fluid = imagen responsive, ovalada y con un ancho de 50 -->
+                            <h3>John Carter</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <div class="d-flex flex-row justify-content-center"><!-- Para que sus iconos de clase esten centrados -->
+                                <div class="p-4" ><!-- Para que haya un espaciado entre los iconos se dividiran con div y tendrán un padding de 4 -->
+                                    <a href="http://facebook.com" target="_blank"><!-- target="_blank" para que lo habra en un nueva pestaña -->
+                                        <i class="fab fa-facebook"></i>
+                                    </a>
+                                </div>
+                                <div class="p-4" ><!-- Para que haya un espaciado entre los iconos se dividiran con div y tendrán un padding de 4 -->
+                                    <a href="http://twitter.com" target="_blank"><!-- target="_blank" para que lo habra en un nueva pestaña -->
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </div>
+                                <div class="p-4" ><!-- Para que haya un espaciado entre los iconos se dividiran con div y tendrán un padding de 4 -->
+                                    <a href="http://instagram.com" target="_blank"><!-- target="_blank" para que lo habra en un nueva pestaña -->
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="bg-light py-5"><!-- py-5 = espaciado arriba y abajo de 5 -->
+        <div class="container"><!-- Centra el contenido -->
+            <div class="row">
+                <div class="col-lg-9"><!-- Tendra 2 separaciones esta de 9 columnas que contendra el formulario -->
+                    <h3>Contact</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <form action=""><!-- No redirecciona a ningun lado ya que eso se hace con codigo de servidor -->
+                        <div class="input-group mb-3 "><!-- Lo que hace es poner nuestro input con un icono y un texto y con un margen bottom de 3 para que exista un separacion entre cada input -->
+                            <div class="input-group-prepend"><!-- para que el icono vaya pegado al input -->
+                                <i class="fas fa-user input-group-text"></i><!-- input-group-text También para que quede bien el icono con el input -->
+                            </div>
+                            <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="input-group mb-3"><!-- Lo que hace es poner nuestro input con un icono y un texto y con un margen bottom de 3 para que exista un separacion entre cada input -->
+                            <div class="input-group-prepend"><!-- para que el icono vaya pegado al input -->
+                                <i class="fas fa-envelope input-group-text"></i><!-- input-group-text También para que quede bien el icono con el input -->
+                            </div>
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="input-group mb-3"><!-- Lo que hace es poner nuestro input con un icono y un texto y con un margen bottom de 3 para que exista un separacion entre cada input -->
+                            <div class="input-group-prepend"><!-- para que el icono vaya pegado al input -->
+                                <i class="fas fa-pencil-alt input-group-text"></i><!-- input-group-text También para que quede bien el icono con el input -->
+                            </div>
+                            <textarea class="form-control" cols="30" rows="10" placeholder="Write your Message"></textarea>
+                        </div>
+                        <button class="btn btn-primary btn-lg btn-block">
+                            Send Your Message
+                        </button>
+                    </form>
+                </div>
+                <div class="col-lg-3 align-self-center"><!-- Y esta de 3 columnas que contendra la imagen haciendo las 12 columnas y centrado -->
+                    <img src="img/logo.png" alt="Logo" style="width: 100%">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container p-3 text-white text-center"><!-- padding de 3 y container para que este centrado el contenido -->
+            <p>Copyright &copy; 2018</p><!-- &copy = icono de copyright -->
+        </div>
+    </footer>
+
+    <!-- BOOTSTRAP JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+</body>
+</html>

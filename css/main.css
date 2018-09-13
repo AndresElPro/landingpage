@@ -1,0 +1,32 @@
+.navbar {
+    box-shadow: 2px 2px 5px #000;
+    opacity: .9;
+} /* Efecto sombra en la navegación */
+
+.navbar .nav-item .nav-link {
+    color: #fff;
+} /* Cambiando el color a los textos o link de los items */
+
+.main-header {
+    position: relative;
+    background: url(../img/background.jpg); 
+    background-size: cover;
+    min-height: 600px;
+} /* Estilos para fondo, primero salgo de la carpeta css, y selecciono la imagen, size: cover para que cubra o ocupe todo el tamaño de la pantalla, le damos un min-height = alto de la pantalla minimo que cubre la imagen y position relative para que funcione todo bien? xD */
+
+.background-overlay {
+    position: absolute;
+    background: rgba(48, 51, 107, .7); 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}/* Color sobre la imagen, el número final es la opacidad de 0 a 1 y los tamaños para que tome el 100% de el alto y ancho de el main header de arriba ya que es el elemento padre */
+
+.form-control, .btn {
+    border-radius: 0;
+} /* Para las clases btn y form-control  vamos a cambiarle el estilo de los bordes */
+
+.team, footer {
+    background: #30336b;
+} /* Afectando la sección TEAM y al elemento footer */
